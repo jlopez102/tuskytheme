@@ -29,7 +29,8 @@ if ( has_post_thumbnail()): ?>
 		</div>
 		
 			<div class="single-info">
-		<h3><?php echo substr( get_the_title(), 0, 40 ); ?></h3>
+		<h2 class="fade-in"><?php echo substr( get_the_title(), 0, 40 ); ?></h2>
+		<div class="post-tags">
 			
 			<?php  $terms = get_the_terms( $post->ID , 'discipline' );
 		   foreach ( $terms as $term ) {
@@ -37,6 +38,7 @@ if ( has_post_thumbnail()): ?>
 			echo '<p>' . $term->name . '</p>';
 			}
 			?>
+		</div>
 			</div>
 		</div>
 <?php endif;  ?>

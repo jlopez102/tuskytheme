@@ -47,7 +47,7 @@ get_header();
 
 
 
-<h2>Featured</h2>
+<h2 class="fade-in">Featured</h2>
   <?php if ($wpbp->have_posts()) :  while ($wpbp->have_posts()) : $wpbp->the_post(); ?>  
 
 	 <?php if ( (function_exists('has_post_thumbnail')) && (has_post_thumbnail()) ) :  ?>  

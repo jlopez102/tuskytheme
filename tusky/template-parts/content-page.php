@@ -13,7 +13,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h2 class="entry-title ml16" >', '</h2>' ); ?>
+		<?php the_title( '<h2 class="entry-title fade-in" >', '</h2>' ); ?>
 	</header><!-- .entry-header -->
 
 	<?php tusky_post_thumbnail(); ?>
